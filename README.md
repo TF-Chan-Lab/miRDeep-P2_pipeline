@@ -2,7 +2,7 @@
 
 This is a general pipeline for performing miRNA prediction and differential expression analysis using small RNA sequencing (sRNA-seq) data of plant samples. In this pipeline, the tool for miRNA prediction from sRNA-seq data is miRDeep-P2 (http://www.srnaworld.com/miRDP2/index.html). The output of miRDeep-P2 is parsed by parse_miRDeep_prediction.pl script in this pipeline. The parsed predicted miRNA sequences are searched against known miRNA sequences from the public domain for annotation purpose. In differential expression analysis, the sRNA-seq read data are mapped to the predicted miRNA sequences using Bowtie (http://bowtie-bio.sourceforge.net/index.shtml) and the read count for each miRNA sequence is generated. Finally, with the miRNA count data, DESeq2 (https://bioconductor.org/packages/release/bioc/html/DESeq2.html) is used to perform data filtering, normalization and differential expression analysis. In addition, it is recommended to merge the predicted miRNA sequences with those present in the public domain, such as miRBase, for differential expression analysis, in order to increase the sensitivity. 
 
-The details of using this pipeline are described as following. And the pipeline assumes that all files are in the same directory.
+The details of using this pipeline are described as following. And the pipeline assumes that all files are in the same directory. It is also assumed that all the tools can readily be called in command line.
 
 ## Computational environment
 
@@ -103,3 +103,5 @@ Then each sample, e.g. `sample1.fq`, is mapped to the reference miRNA sequences 
 With the alignment `.bam` file, the number of reads perfectly mapped to each reference miRNA sequence is generated using the following command.
 
 `perl bam2ref_counts.pl -bam sample1.bam -f miRNA_ref.fa > sample1_count.txt`
+
+To combine the read counts data for each sample into a table, a file containing all the 
