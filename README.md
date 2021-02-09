@@ -8,6 +8,10 @@ The details of using this pipeline are described as following. And the pipeline 
 
 - LINUX command line system
 
+- Perl (https://www.perl.org/)
+
+- BioPerl modules including Bio::SeqIO, Bio::Seq and Bio::SearchIO (https://bioperl.org/INSTALL.html)
+
 - miRDeep-P2 (http://www.srnaworld.com/miRDP2/index.html)
 
 - blast (https://blast.ncbi.nlm.nih.gov/Blast.cgi?PAGE_TYPE=BlastDocs&DOC_TYPE=Download)
@@ -17,6 +21,8 @@ The details of using this pipeline are described as following. And the pipeline 
 - samtools (http://www.htslib.org/)
 
 - R and DESeq2 (https://bioconductor.org/packages/release/bioc/html/DESeq2.html)
+
+## Installation of the pipeline
 
 ## Files
 
