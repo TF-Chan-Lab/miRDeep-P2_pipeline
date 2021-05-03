@@ -24,7 +24,7 @@ The details of using this pipeline are described as following. And the pipeline 
 
 ## Installation of the pipeline
 
-`git clone https://github.com/alanlamsiu/miRDeep-P2_pipeline.git`
+`git clone https://github.com/TF-Chan-Lab/miRDeep-P2_pipeline.git`
 
 ## Files
 
