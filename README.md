@@ -4,6 +4,8 @@ This is a general pipeline for performing miRNA prediction and differential expr
 
 The details of using this pipeline are described as following. And the pipeline assumes that all files and the directory of this pipeline are in the same directory. It is also assumed that all the tools can readily be called in command line.
 
+This pipeline was firstly used in the article, https://doi.org/10.1002/tpg2.20103.
+
 ## Computational environment
 
 - LINUX command line system
