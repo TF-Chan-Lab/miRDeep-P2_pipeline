@@ -62,7 +62,7 @@ The pipeline has been tested with miRDeep-P2 (v1.1.4), which is used for demonst
 
 `miRDP2-v1.1.4_pipeline.bash -g ref.fa -x ref.fa -q -b fastq_list.txt -o result`
 
-The file `fasta_list.txt` contains the absolute path to each of the .fastq file, with one line for one file. The output directory `result` contains the resulted results in its subdirectory for all samples, named sample1, sample2 and etc. Particularly, the files with suffix `_predictions`, e.g. `result/sample1/sample1_predictions`, are parsed to extract the predicted miRNA seqeunces and their corresponding precursor information. These files are parsed using the following command.
+The file `fastq_list.txt` contains the absolute path to each of the .fastq file, with one line for one file. The output directory `result` contains the resulted results in its subdirectory for all samples, named sample1, sample2 and etc. Particularly, the files with suffix `_predictions`, e.g. `result/sample1/sample1_predictions`, are parsed to extract the predicted miRNA seqeunces and their corresponding precursor information. These files are parsed using the following command.
 
 `perl ./miRDeep-P2_pipeline/script/parse_miRDP2_prediction.pl miRDP2_predictions_list.txt miRDP2`
 
